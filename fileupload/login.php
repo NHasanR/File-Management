@@ -44,7 +44,7 @@ session_start();
                         </div>
 
                         <div id="register" class="animate form">
-                            <form  action="login.php" autocomplete="on" method="post"> 
+                            <form  action="register.php" autocomplete="on" method="post"> 
                                 <h1> Register Here </h1> 
                                 <p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
@@ -71,33 +71,33 @@ session_start();
         <?php
             include "db.php";
             
-            function register($id,$uname,$pass){
-                $q="insert into users values ('$id','$uname','$pass')";
-                mysqli_query("alter table users auto_increment = 1");
-                if(mysqli_query($q)){
-                    mkdir("$dir", 0700);
-                    echo "<script language='javascript'>
-				alert('User Registered');
-				window.location = 'login.php';
-				</script>
-				";
-                    
-                }
-                else{
-                     echo "<script language='javascript'>
-				alert('Registration Failed Or User Already Registered');
-				window.location = 'login.php';
-				</script>
-				";
-                }
-            }
+            
+
             if(isset($_POST['usernamesignup'])){
                 $uname=$_POST['usernamesignup'];
                 $pass=$_POST['passwordsignup'];
                 $pass_crypt=md5($pass);
             
-                register('',$uname,$pass_crypt);
+                $sql = "INSERT into 'users' (username, password) VALUES ('$username', '($password)')";
+
+                $result = mysqli_query($config, $sql);
+
+                if($result){
+                  header('Location: login.php');
+                }
+                else{
+
+                  header('Location: home.php');
+                }
             }
+
+
+
+
+
+
+
+            
             if(isset($_POST['username'])){
                 include "db.php";
                 $username=$_POST['username'];

@@ -40,7 +40,6 @@ CREATE TABLE IF NOT EXISTS `upload_data` (
 --
 
 INSERT INTO `upload_data` (`FILE_NAME`, `FILE_SIZE`, `FILE_TYPE`, `CATEGORY`, `UPLOADED_BY`, `PATH`) VALUES
-('02.jpg', 5, 'image/jpeg', 'Images', 'joe', 'user_data/joe/02.jpg'),
 ('02.jpg', 5, 'image/jpeg', 'Images', 'admin', 'user_data/admin/02.jpg');
 
 -- --------------------------------------------------------

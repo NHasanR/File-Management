@@ -111,7 +111,7 @@ else{
 					 <tr>
 					     <td width='70%'>$fname</td>
 					     <td>$size KB</td>
-					     <td align='right'><a href='$path'><button class='btn btn-primary'><i class='icon-download-alt icon-white'></button></a></td>
+					     <td align='right'><a href='download.php?name=$fname'><button class='btn btn-primary'><i class='icon-download-alt icon-white'></button></a></td>
 					     <td align='right'><a href='delete.php?name=$fname' class='btn btn-danger' onclick='confirm('sure?');'><i class='icon-trash icon-white'></a></td>
 					 </tr>";
 				    }
