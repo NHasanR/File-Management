@@ -1,0 +1,29 @@
+pp::: OA0000003879335
+
+
+EMAIL:: info@al-shafi.com
+pass::: alshafi@2k18
+
+#########################
+Portfolio::
+
+user  :: pmdshafi
+pass  :: spshafi@262829
+
+#########################
+Blog::
+
+user  :: blog
+pass  :: mywordPressblog
+
+
+
+
+Exception theme Note::
+1. Upload theme and activate
+2. Install plugins and activate
+3. Demo import for Exception theme
+tools > import > wordpress run installer > xml upload > 
+(xml location: resources/demo data/content.xml)
+4. Select your Demo from Settings>Reading>static page>select from dropdown
+5. Add menu from appearance>menu (check menu settings global+top)
